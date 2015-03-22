@@ -5,6 +5,7 @@
     <script type="text/javascript" src="assets/angular/angular.min.js"></script>
     <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -12,10 +13,20 @@
     <h1>TODO TODAY</h1>
     <main>
 
-
       <section ng-controller="TodoList as list">
 
-        {{list.items[0].content}}
+        <form name="addItem" ng-submit="addItem.$valid && list.addItem()" novalidate>
+
+          <input type="text" ng-model="list.newItem.content" required />
+          <br />
+          <input type="submit" />
+        </form>
+        <article ng-show="list.newItem.content">
+          {{list.newItem.content}}
+        </article>
+        <article ng-repeat="item in list.items">
+          {{item.content}}
+        </article>
 
       </section>
 
