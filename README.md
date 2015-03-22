@@ -1,5 +1,21 @@
 # Todo Challenge
 
+----------------
+
+Started out just messing around with angular.  Tried to use the 'http-server' module, but could not figure out how to have index in a /public folder and still access bower_components. So I switched to express.
+
+Started trying to set up test features, and apparently the folks of Protractor recommend keeping Karma and Protactor separate.. AKA not running Protractor from Karma and using Karma solely for unit testing.
+
+Got protractor up and running, and then tried integrating Travis CI.
+Currently failing when trying to start webdriver, which I understand to be because I need to set up a remote Selenium Server such as those provided by Sauce Labs. I'm not sure I'll have time to do this before the pull.
+
+
+----------------
+
+
+
+
+
 * Deadline: submit completed pull request by 9am on Monday
 * You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
 
