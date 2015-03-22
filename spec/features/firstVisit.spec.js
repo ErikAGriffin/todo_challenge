@@ -8,6 +8,12 @@ describe('', function() {
     expect(browser.getTitle()).toEqual('Things ToDo');
   });
 
+  it('Should allow a new item to be added', function() {
+
+
+
+  });
+
 
 
 });
