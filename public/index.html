@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="todoListApp">
   <head>
-    <title>Things TODO</title>
+    <title>Things ToDo</title>
     <script type="text/javascript" src="assets/angular/angular.min.js"></script>
     <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -10,7 +10,7 @@
 
   <body>
 
-    <h1>TODO TODAY</h1>
+    <h1>Todo Today</h1>
     <main>
 
       <section ng-controller="TodoList as list">
@@ -25,7 +25,8 @@
           {{list.newItem.content}}
         </article>
         <article ng-repeat="item in list.items">
-          {{item.content}}
+          <span ng-class="{completed : item.isCompleted}">{{item.content}}</span>
+
         </article>
 
       </section>

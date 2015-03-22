@@ -5,3 +5,7 @@
 .ng-valid .ng-dirty {
 
 }
+
+.completed {
+  text-decoration: line-through;
+}

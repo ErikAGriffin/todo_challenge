@@ -17,11 +17,11 @@
 
   var items = [
 
-    {content: "Finish this challenge",
+    {content: "Welcome to TODOList!",
      isCompleted: false
     },
-    {content: "Item 2",
-     isCompleted: false
+    {content: "This item is completed!",
+     isCompleted: true
     }
 
 
