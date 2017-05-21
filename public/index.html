@@ -9,37 +9,28 @@
   </head>
 
   <body>
-
     <h1>Todo Today</h1>
     <main>
 
       <section ng-controller="TodoList as list">
 
         <form name="addItem" ng-submit="addItem.$valid && list.addItem()" novalidate>
-
           <input type="text" ng-model="list.newItem.content" required />
           <br />
           <input type="submit" />
         </form>
+
         <article ng-show="list.newItem.content">
           {{list.newItem.content}}
         </article>
+
         <article ng-repeat="item in list.items">
           <span ng-class="{completed : item.isCompleted}">{{item.content}}</span>
-
+          <a ng-click=""><img src="/images/circle.png" /> </a>
         </article>
 
       </section>
 
-
-
     </main>
-
-
-
-
   </body>
-
-
-
 </html>
